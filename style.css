@@ -1,0 +1,697 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: grey;
+    font-family: 'Assistant', sans-serif;
+}  
+
+h1{
+    font-family: "trajan-pro-3", serif; 
+    font-weight: 600; 
+    text-align: center;
+    font-style: normal;
+    font-size: 6vw;
+    margin-top: -1vw;
+    color: #e0644a; 
+}
+
+h2{
+    font-family: "trajan-pro-3", serif; 
+    font-weight: 600; 
+    font-style: normal; 
+    font-size: 2vw;
+    margin-bottom: -1vw; 
+    margin-top: -1vw;
+}
+@media screen and (max-width:720px) {
+   h2{font-size:2.5vw;}
+}
+
+@media screen and (max-width:290px) {
+   h2{font-size:3vw;}
+}
+
+h3{
+    font-family: cortado, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header{
+    position: fixed;
+    z-index: 1;
+}
+
+p, li, button, label{
+    font-size: 1.2vw;
+}
+@media screen and (max-width:720px) {
+   p, li, button, label{font-size:1.5vw;}
+}
+
+@media screen and (max-width:420px) {
+   p, li, button, label{font-size:2vw;}
+}
+@media screen and (max-width:290px) {
+   p, li, button, label{font-size:3vw;}
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 1.5vw;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+body{
+    
+}
+
+#toppen{
+    padding:0px;
+}
+
+.link{
+    font-weight:bold;
+}
+.link:hover{
+    text-decoration: underline;
+}
+button{
+    border:none;
+    border-radius: 5px;
+    padding:0.5vw;
+    color:#ffffff;
+    background-color: #a6a6a6;   
+}
+
+button:hover{
+    opacity: 0.5;
+    font-weight: bold;
+    color: #000000;
+    font-weight: bolder;
+}
+
+
+.dropbtn {
+  background-color: #a6a6a6;
+  color: #ffffff;
+    font-weight: bold;
+    padding: 0.5vw;
+  font-size: 1vw;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover{
+    opacity:0.5;
+}
+
+
+#kolonne{
+    position: fixed;
+}
+
+.burger{
+    width: 3.5vw;
+    height: 0.5vw;
+    background-color:#e0644a;
+    font-size: 2vw;
+    margin:0.6vw;    
+}
+
+#meny{
+    width: auto;
+    height: auto;
+    margin-left: 3vw;
+}
+
+.dropdown {
+    margin-top: 1vw;
+  position: relative;
+  display: inline-block;
+    z-index: 14;
+}
+
+.kal .dropdown, .helg .dropdown{
+    position: relative;
+    z-index:9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+font-size: 1vw;
+  min-width: 25vw;
+  box-shadow: 0vw 0.8vw 1.6vw 0vw rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+@media screen and (max-width:720px) {
+   .dropdown-content{font-size:2.5vw;}
+}
+
+.dropdown-content a{
+  color: #000000;
+  padding: 1.2vw 1.6vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #a6a6a6;
+    color:white;
+}
+
+#logo{
+    position: fixed;
+    z-index: 11;
+    margin-top: -1vw;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+#logo img{
+    margin-top: 1vw;
+    margin-left: 45%;
+    margin-bottom: 0.5vw;
+    width: 10%;
+}
+
+.overskrift{
+    color:#e0644a;
+    padding-top: -2vw;
+    margin-top: -2.5vw;
+    font-size: 4.5vw;
+    }
+
+
+#forsidebilde{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-top: 7vw;
+    margin-bottom: 0;
+ }
+
+
+.slogan{
+    position: relative;
+    z-index: 2;
+    margin-top: -20vw;
+    margin-right: 1vw;
+    padding: 2vw;
+    border-radius: 5px;
+    background-color:#f1f1f1;
+    max-width: 25%;
+    float: right;
+    }
+
+.slogan p{
+    margin-top: -4vw;
+    float: right;
+    font-size: 2vw;
+}
+
+.rop{
+    float:right;
+    font-size: 4vw;
+    color: #e0644a;
+    margin-top:0;
+}
+
+.artikkelbilde{
+        width: 100%;
+        margin-top: 3vw;     
+}
+
+.opp-bilde{
+    display: block;
+    width: 100%;
+    margin-bottom: -25vw;
+}
+
+.boks{
+    display: block;
+    width: 100%;
+    padding:1vw;
+    border-bottom: 0.5vw solid #e0644a;
+    border-top: 0.5vw solid #e0644a;
+}
+
+.intro{
+    padding:2vw;
+    padding-left: 10vw;
+    padding-right:10vw;
+    text-align: center;
+}
+
+.aktuelt{
+    padding: 5vw;
+    width: 98%;
+    margin-bottom: vw;   
+}
+
+.aktuelt div h2 {
+    font-size: 2vw;
+    padding: 2vw;
+    text-align: center;
+    color: #a6a6a6;
+}
+
+#kategori{
+    width: 100%;
+    text-align: center;
+    margin-top: -5vw;
+    float:left;
+    color:#ffffff;
+}
+
+
+#kategori ul li{
+    display: inline-block;
+    width: 10vw;
+    padding: 1vw;
+    margin: 2vw;
+    border-radius: 5px;
+    background-color: #a6a6a6;
+    opacity: 0.5;
+}
+
+
+#kategori ul li:hover{
+    font-weight: bold;
+    font-size: 2vw;
+    color: #000000;
+}
+
+
+
+.grid-container-oppskrift {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 1vw;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+
+@media screen and (max-width:720px) {
+   .grid-container-oppskrift{grid-template-columns:100%;}
+}
+
+
+.grid-container-oppskrift> div {
+    padding: 0;
+    background-color:#ffffff;
+}
+
+
+
+.item1{
+    height: 12vw;
+    margin-top:-5vw;
+    margin-bottom: 5vw;
+    z-index: -2;
+}
+
+<!--Overskrifter over hver oppskriftskategori-->
+
+.item2, .item3, .item4{
+    text-align: center;
+    margin-top: -10vw;
+    margin-bottom: -4vw;
+}
+
+.item3 h3{
+    color: #e0644a;
+    font-size: 6vw;
+    margin-top: 1vw;
+}
+
+
+#jakke, #skjerf,#votter,#sokker{
+    margin-top: -2vw;
+    margin-bottom: 10vw;
+    width: 100%;
+    height: 10vw;
+    }
+
+@media screen and (max-width:720px){
+    #jakke, #skjerf,#votter,#sokker{
+        margin-top: 0;
+    }   
+}
+
+.beskrivelse{
+    width: 100%;
+    margin-left:0;
+    margin-top:25vw;
+    margin-bottom:0;
+    padding:2vw 2vw;
+    background-color: #ffffff;
+    border-top-color: #e0644a;
+    border-bottom-color: #e0644a;
+    border-style: solid none solid none;
+    border-width: 0.5vw 0vw 0.5vw 0vw;
+}
+
+
+.bestill{
+    background-color: #a6a6a6;
+    border-radius: 5px;
+    width: 8vw;
+    margin-top: -5.5vw;
+    margin-left: 70%;
+}
+
+.bestill:hover{
+   opacity: 0.5;
+    border:none;
+    }
+
+@media screen and (max-width:720px) {
+    .bestill{margin-top:-10vw; margin-left: 85vw;}
+}
+
+.mellomoverskrift{
+    width: 100%;
+    text-align: center;
+}
+
+.grid-container-om{
+    display: grid;
+  grid-template-columns: 50% 50%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.item10{
+    width: 100%;
+    padding:1vw 4vw
+}
+
+.item11{
+    width: 100%;
+    border-top: 0.5vw solid #e0644a;
+    border-bottom: 0.5vw solid #e0644a;
+    padding:2vw;
+}
+
+#pre-skjema{
+    width: 100;
+    height: 10vw;
+    margin-bottom: -10vw
+}
+
+form{
+    margin-top: 10vw;
+    width: 100%;
+}
+
+label{
+    display:block;
+    margin: 1vw;
+    font-weight: bold;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    padding: 1vw;
+    margin-bottom: 10px;
+}
+
+.svarknapp{
+    width:25%;
+    border: none;
+    border-radius: 5px;
+    background-color:#f1f1f1;
+    color: grey;
+    font-weight: bold;
+}
+
+.svarknapp:hover{
+    background-color: grey;
+    color: #ffffff;
+}
+
+.paamelding{
+    float:right;
+    background-color: grey;
+    color:white;
+    padding: 1vw;
+    border-radius: 5px;
+    width: 17%;
+}
+
+#samarb{
+    padding:3vw;
+    width: 100%; 
+}
+
+#samarb li{
+    display: inline-block;
+    margin: 1vw 8vw;
+    list-style: none;
+    width: 10%;
+}
+
+.item12{
+    width: 100%;
+    padding:2vw;
+    margin-top: -7vw;
+}
+
+#pre-kalender{
+    height: 10vw;
+}
+
+#kalender{
+    margin-top:15vw;
+    text-align: center;
+    font-size: 3vw;
+    border-bottom: 0.5vw #e0644a solid;
+    border-top: 0.5vw #e0644a solid;
+    color:#e0644a
+}
+
+.item13{
+    width: 100%;
+    padding: 2vw;   
+    height: 50vw;
+    overflow: hidden;    
+}
+
+.toppfelt{
+    width: 100%;
+    height: 1vw;
+    margin-top:10vw;
+    background-color: #ffffff;
+}
+    
+
+#januar, #februar, #mars, #april, #mai, #juni, #juli, #august, #september, #oktober, #november, #desember{
+    position: relative;
+    height: 70vw;
+    margin-top:10vw;
+    float:left;
+}
+
+#januar{
+    margin-top: -5vw;
+}
+
+.helg .dropdown-content, #mai .dropdown-content{
+    right: 0;
+    margin-right: 7vw;
+    margin-top: -4vw;
+}
+
+.helg .dropdown-content, .kal .dropdown-content{
+    padding: 1vw;
+} 
+
+.bunnfelt{
+    height: 15vw;
+    background-color:#eee;
+}
+
+.month {
+  padding: 1vw 1vw;
+  width: 100%;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.month ul {
+  margin: -3;
+  padding: -1vw;
+    list-style: none;
+}
+
+.month ul li h3 {
+  font-size: 1.5vw;;
+  text-transform: uppercase;
+  letter-spacing: 0.3vw;
+  color: #e0644a;
+}
+
+.month .prev {
+    text-decoration:none;
+    list-style: none;
+    float: left;
+    width: 3vw;
+    margin-top: -0.7vw;
+     padding: 1vw;
+    font-size: 2vw;
+}
+
+.month .next {
+    text-decoration: none;
+    list-style: none;
+    float: right;
+    width: 3vw;
+    margin-top: -0.7vw;
+    padding: 1vw;
+    font-size: 2vw;
+}
+
+.next:hover, .prev:hover{
+    background-color: #ffffff;
+    opacity: 70%;
+}
+
+.weekdays {
+    width: 100%;
+    background-color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.2%;
+    padding: 1vw 0 1vw 0;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 0vw 1vw;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type:none;
+  display: inline-block;
+  width: 13.2%;
+    height: 3.5vw;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:2vw;
+  color: #777;
+}
+
+.days li .active {
+  padding: 0.5vw;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+
+.tilbake{
+    float: right;
+    margin-bottom: -15vw;
+    background-color: #e0644a;
+    
+}
+
+footer{
+    margin-top: 10vw;
+    margin-bottom: 1vw;
+    background-color: #f1f1f1;
+}
+
+#adresse{
+    width: 25%;
+    display: inline-block;
+    margin-left: 8%;
+}
+    
+#some{
+    width: 25%;
+    display:inline-block;
+    margin-left: 4%;
+}
+.fa {
+  padding: 2vw;
+  font-size: 2vw;
+  width: 5vw;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background:  #125688;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+#bet{
+    width: 25%;
+    display:inline-block;
+    margin-right: 8%;
+}
